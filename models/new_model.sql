@@ -1,1 +1,1 @@
-select 1 as cats
+select 1 as dogs
