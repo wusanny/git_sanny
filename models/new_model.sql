@@ -1,1 +1,1 @@
-select 1 as boooho
+select 1 as upside_down
