@@ -1,1 +1,1 @@
-select 1 as upside_down
+select 1 as babba
