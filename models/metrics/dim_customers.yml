@@ -41,3 +41,9 @@ metrics:
     type: simple
     type_params:
       measure: customers
+  - name: "lifetime_orders"
+    label: "lifetime_orders"
+    description: "Total count of orders per customer"
+    type: simple
+    type_params:
+      measure: count_lifetime_orders
