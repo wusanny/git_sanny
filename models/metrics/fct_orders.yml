@@ -40,7 +40,7 @@ metrics:
   - name: "order_total"
     description: "Sum of orders value"
     type: simple
-    label: "order_total"
+    label: "中文"
     type_params:
       measure: order_total
   - name: "order_count"
