@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: snap_source
+      database: development
+      schema: dbt_sanny
+      tables:
+          - name: snap_one
