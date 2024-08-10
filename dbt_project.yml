@@ -38,6 +38,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     +materialized: table
+    development:
+      +database: development
+    marts:
+     +database: marts
+    staging:
+      +database: staging
 
 on-run-start: 
   "{{ print(target) }}"
