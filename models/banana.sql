@@ -1,1 +1,2 @@
-select 1 as yellow_fruit
+
+select 1 as fruit
