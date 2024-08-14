@@ -1,1 +1,1 @@
-select 1 as yellow
+select 1 as yellowg
