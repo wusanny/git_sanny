@@ -36,6 +36,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
+  NewProject:
+    +access: public
 
 
 flags:
