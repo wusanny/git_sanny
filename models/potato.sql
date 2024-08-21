@@ -1,1 +1,1 @@
-select 1 as ide
+select 1 as potato
