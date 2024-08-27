@@ -37,9 +37,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   NewProject:
-    vege:
-      root:
-        +access: public
+    first:
+      +schema: root
+    second:
+      +schema: always_testing
 
 
 flags:
