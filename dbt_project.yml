@@ -37,10 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   NewProject:
-    first:
-      +schema: root
-    second:
-      +schema: always_testing
+    +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
 
 
 flags:
