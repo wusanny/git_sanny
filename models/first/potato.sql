@@ -1,1 +1,1 @@
-select 1 as potato
+select 1 as milk

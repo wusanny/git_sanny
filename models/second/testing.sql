@@ -1,1 +1,1 @@
-select * from {{ref('potato')}}
+select * from {{ref('cow')}}
