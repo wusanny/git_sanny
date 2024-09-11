@@ -37,11 +37,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   NewProject:
-    +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
+#     +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
 
 
-flags:
-  warn_error_options:
-    include: # Previously called "include"
-     - NoNodesForSelectionCriteria
+# flags:
+#   warn_error_options:
+#     include: # Previously called "include"
+#      - NoNodesForSelectionCriteria
       
