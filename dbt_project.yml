@@ -37,6 +37,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   NewProject:
+    one:
+      +schema: braus
+
+
+
+
+
+
+
 #     +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
 
 
