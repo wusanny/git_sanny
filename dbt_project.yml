@@ -19,10 +19,18 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
+
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
+
+# ======
+# Macro Overrides
+# ======
+dispatch:
+  - macro_namespace: dbt
+    search_order: ['macros_for_dbt', 'dbt']
 
 
 # Configuring modelsz
@@ -38,10 +46,19 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   we_new:
     +access: public
+    +materialized: table
 
 
-flags:
-  warn_error_options:
-    include: # Previously called "include"
-     - NoNodesForSelectionCriteria
+
+
+
+
+
+#     +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
+
+
+# flags:
+#   warn_error_options:
+#     include: # Previously called "include"
+#      - NoNodesForSelectionCriteria
       
