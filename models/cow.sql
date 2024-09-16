@@ -1,1 +1,1 @@
-select 1 as cow
+select * from {{ ref('my_new_project', 'new_model') }}
