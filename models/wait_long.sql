@@ -1,1 +1,1 @@
-select * from {{ source('dbt_sprawira', 'dev_source') }}
+select system$wait(240) as c
