@@ -1,12 +1,6 @@
 packages:
-<<<<<<< HEAD
-  - package: dbt-labs/dbt_utils
-    version: 1.1.1
-sha1_hash: a158c48c59c2bb7d729d2a4e215aabe5bb4f3353
-=======
 - package: dbt-labs/dbt_utils
   version: 1.1.1
 - package: dbt-labs/dbt_project_evaluator
   version: 0.14.2
 sha1_hash: ed46fc60d093e855db00f419e84cebab7068c804
->>>>>>> 6a224e3fa2897f60433d6c2138e7d4d06ebedda9
