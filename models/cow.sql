@@ -1,1 +1,0 @@
-select * from {{ ref('my_new_project', 'new_model') }}
