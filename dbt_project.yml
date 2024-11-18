@@ -44,10 +44,6 @@ dispatch:
 # using the `{{ config(...) }}` macro.
 
 models:
-<<<<<<< HEAD
-
-  
-=======
   we_new:
     +access: public
     +materialized: table
@@ -66,4 +62,3 @@ models:
 #     include: # Previously called "include"
 #      - NoNodesForSelectionCriteria
       
->>>>>>> 7579c238375ce8020a7edafbc158d775774682d7
