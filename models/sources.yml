@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dbt_sprawira
+    database: development 
+    schema: dbt_sprawira
+    tables:
+      - name: dev_source
