@@ -1,1 +1,1 @@
-select potato from {{ref("pre_foo")}}
+select poop from {{ref("pre_foo")}}
