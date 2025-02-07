@@ -1,1 +1,0 @@
-select system$wait(240) as c
