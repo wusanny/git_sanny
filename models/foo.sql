@@ -1,1 +1,1 @@
-select * from {{ref("pre_foo")}}
+select potato from {{ref("pre_foo")}}
