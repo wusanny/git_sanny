@@ -1,1 +1,1 @@
-select potato from {{ref("pre_foo")}}
+select * from {{ source("dbt_sprawira", "dev_source") }}
