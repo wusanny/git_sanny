@@ -1,5 +1,5 @@
 {{ config(
-    tags=["banana"]
+    tags=["bananas"]
 ) }}
 
 select * from {{ref("foo")}}
