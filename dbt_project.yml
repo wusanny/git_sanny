@@ -48,7 +48,6 @@ dispatch:
 
 models:
   we_new:
-    +access: public
     +materialized: table
 
 
