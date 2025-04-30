@@ -1,0 +1,5 @@
+version: 2
+
+seeds:
+  - name: yes_la
+    description: new seed file
