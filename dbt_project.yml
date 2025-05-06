@@ -61,7 +61,7 @@ models:
 
 # flags:
 #   warn_error_options:
-#     include: # Previously called "include"
+#     silence:
 #      - NoNodesForSelectionCriteria
       
 #
