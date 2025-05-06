@@ -62,4 +62,4 @@ models:
 flags:
   warn_error_options:
     silence:
-     - NoNodesForSelectionCriteria
+     - NoNodeForYamlKey
