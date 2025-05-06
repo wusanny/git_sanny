@@ -59,9 +59,7 @@ models:
 #     +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
 
 
-# flags:
-#   warn_error_options:
-#     silence:
-#      - NoNodesForSelectionCriteria
-      
-#
+flags:
+  warn_error_options:
+    silence:
+     - NoNodesForSelectionCriteria
