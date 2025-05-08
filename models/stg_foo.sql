@@ -1,0 +1,1 @@
+select * from {{ ref('x_project', 'foo') }}

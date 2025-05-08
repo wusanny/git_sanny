@@ -1,1 +1,1 @@
-select * from {{ ref('x_project', 'foo') }}
+select * from {{ ref('stg_foo') }}
