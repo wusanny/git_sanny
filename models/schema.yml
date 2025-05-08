@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: foo
+  - name: stg_foo
     columns:
       - name: id
         tests:
