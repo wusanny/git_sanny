@@ -1,9 +1,8 @@
 version: 2
 
 models:
-  - name: another_new
+  - name: foo
     columns:
-      - name: id
+      - name: goddamit
         tests:
           - unique
-          - not_null

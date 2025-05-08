@@ -28,6 +28,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+
 # ======
 # Macro Overrides
 # ======
@@ -48,18 +49,12 @@ dispatch:
 
 models:
   we_new:
-    +materialized: table
-
-
-
-
-
 
 
 #     +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
 
 
-flags:
-  warn_error_options:
-    silence:
-     - NoNodeForYamlKey
+# flags:
+#   warn_error_options:
+#     silence:
+#      - NoNodeForYamlKey
