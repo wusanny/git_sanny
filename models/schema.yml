@@ -3,6 +3,6 @@ version: 2
 models:
   - name: foo
     columns:
-      - name: goddamit
+      - name: id
         tests:
           - unique
