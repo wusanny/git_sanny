@@ -1,1 +1,1 @@
-select 1 as meow
+select 1 as whaththeck
