@@ -1,1 +1,1 @@
-select 1 as poo
+select 1 as pooa
