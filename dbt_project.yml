@@ -6,6 +6,9 @@ name: 'we_new'
 version: '1.0.0'
 config-version: 2
 
+dbt-cloud:
+  project-id: 368469
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
@@ -25,13 +28,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-# ======
-# Macro Overrides
-# ======
-dispatch:
-  - macro_namespace: dbt
-    search_order: ['macros_for_dbt', 'dbt']
-
+vars:
+ full_refresh_warehouse: dummy_wh
 
 # Configuring modelsz
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -45,20 +43,13 @@ dispatch:
 
 models:
   we_new:
-    +access: public
-    +materialized: table
+   +snowflake_warehouse: transforming
 
 
 
-
-
-
-
-#     +query_tag: "{{ env_var('DBT_QUERY_TAG') }}"
 
 
 # flags:
 #   warn_error_options:
-#     include: # Previously called "include"
-#      - NoNodesForSelectionCriteria
-      
+#     silence:
+#      - NoNodeForYamlKey
