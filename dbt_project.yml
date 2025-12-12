@@ -43,7 +43,7 @@ vars:
 
 models:
   we_new:
-    +databricks_compute: "compute_a"
+    +databricks_compute: "{{ 'compute_a' if target.name == 'ci' else 'compute_b' }}"
 
 
 
