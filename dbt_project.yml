@@ -29,7 +29,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
- full_refresh_warehouse: dummy_wh
+
 
 # Configuring modelsz
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -42,9 +42,6 @@ vars:
 # using the `{{ config(...) }}` macro.
 
 models:
-  we_new:
-    +databricks_compute: "{{ 'compute_a' if target.name == 'ci' else 'compute_b' }}"
-
 
 
 
