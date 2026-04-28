@@ -21,3 +21,9 @@ sources:
           - name: user_id
           - name: order_date
           - name: status
+
+  - name: ecom
+    schema: raw
+    tables:
+      - name: raw_items
+        description: items included in an order
