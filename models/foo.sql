@@ -1,9 +1,1 @@
-{{
-  config(
-    materialized='incremental',
-    cluster_by=['id']
-  )
-}}
-
-select * from {{ ref ('bar') }}
-group by 1
+select 1 as id
