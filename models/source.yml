@@ -12,4 +12,12 @@ sources:
             description: the primary key for raw customers data
             # tests:
             #   - unique
-            #   - not_null   
+            #   - not_null
+
+      - name: orders
+        description: the orders data
+        columns:
+          - name: id
+          - name: user_id
+          - name: order_date
+          - name: status
