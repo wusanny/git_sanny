@@ -3,3 +3,4 @@
 target/
 git_sanny/dbt_packages/
 logs/
+dbt_internal_packages/

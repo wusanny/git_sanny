@@ -1,29 +1,16 @@
 version: 2
 
 sources:
-  - name: jaffle_shop
-    description: a clone of a Postgres application database
-    database: raw
+  - name: test_freshness
+    database: analytics
+    schema: dbt_sprawira_new
+    config:
+      freshness:
+        warn_after: {count: 1, period: day}
+        error_after: {count: 2, period: day}
+      loaded_at_field: updated_at
     tables:
-      - name: customers
-        description: the raw customers data
-        columns:
-          - name: id
-            description: the primary key for raw customers data
-            # tests:
-            #   - unique
-            #   - not_null
-
-      - name: orders
-        description: the orders data
-        columns:
-          - name: id
-          - name: user_id
-          - name: order_date
-          - name: status
-
-  - name: ecom
-    schema: raw
-    tables:
-      - name: raw_items
-        description: items included in an order
+      - name: source_1_fresh
+      - name: source_3_missing          # <-- doesn't exist, will throw query error
+      - name: source_2_stale           # <-- exists but is stale
+      - name: source_4_fresh           # <-- clone of src_fresh, just to have more "victims"

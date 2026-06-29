@@ -1,1 +1,0 @@
-select * from {{ source("ecom", "raw_items") }}
